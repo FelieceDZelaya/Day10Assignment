@@ -46,7 +46,7 @@ import { accounts } from '../database/Accounts';
         })[0].bal,
         balance : accounts.filter(acc => {
           return acc.account === req.params.account
-        })[0].bal - req.params.amount,
+        })[0].bal - Number(req.params.amount),
         name : accounts.filter(acc => {
           return acc.account === req.params.account
         })[0].name,
@@ -64,7 +64,7 @@ import { accounts } from '../database/Accounts';
         })[0].bal,
         balance : accounts.filter(acc => {
           return acc.account === req.params.account
-        })[0].bal + req.params.amount,
+        })[0].bal + Number(req.params.amount),
         name : accounts.filter(acc => {
           return acc.account === req.params.account
         })[0].name,

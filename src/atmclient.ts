@@ -14,7 +14,7 @@ export class AtmClient implements AtmInterface {
     setInitialBalance(acct:string, balance : number ) : void {
         got.get("http://localhost:3000/atm").then(
             (data) => {
-                console.log("Data from web backend " + data.body);
+                console.log("Data from web backend testing " + data.body); 
                 let result = JSON.parse(data.body);
                 console.log(result);
             },

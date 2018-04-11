@@ -1,7 +1,7 @@
 import * as express from 'express';
 import { accounts } from '../database/Accounts';
 
-  class Atm {
+class Atm {
 
   public express;
 
